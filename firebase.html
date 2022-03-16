@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Realtime database</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="firebase.png" type="image/png">
+</head>
+<body>
+    <main>
+        <img src="firebase.png" alt="Firebase" width="80px" height="auto" >
+        <form>
+            <label for="userId">User ID</label><br>
+            <input type="text" placeholder="User ID" id="userId"><br>
+            <label for="firstname">First name</label><br>
+            <input type="text" placeholder="First name" id="firstName"><br>
+            <label for="lastname">Last name</label><br>
+            <input type="text" placeholder="Last name" id="lastName"><br>
+            <label for="age">age</label><br>
+            <input type="number" placeholder="age" id="age"><br>
+            <button value="add" id="addBtn" class="btn waves-effect waves-light" onclick="Addalert();">Add</button>
+            <button value="updatebtn" id="updateBtn" class="btn waves-effect waves-light" onclick="Upalert();">Update</button>
+            <button value="removebtn" id="removeBtn" class="btn waves-effect red darken-1" onclick="Realert();">Remove</button>
+
+            <a href="Auth/login.html" class="btn waves-effect waves-light longe">AUTHENTICATION</a>
+            
+        </form>
+    </main>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCQU7uqV4OzwBvUwwvezhRh4GFgpjClOZQ",
+    authDomain: "project-today-11bb5.firebaseapp.com",
+    databaseURL: "https://project-today-11bb5.firebaseio.com",
+    projectId: "project-today-11bb5",
+    storageBucket: "project-today-11bb5.appspot.com",
+    messagingSenderId: "862360317496",
+    appId: "1:862360317496:web:958dc276622abb5fc8c0cd",
+    measurementId: "G-5MTZBXVNXC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    <script src="./function.js"></script>
+
+<script type="text/javascript">
+function Addalert()
+{
+    alert('Your Information has been added to the database successfully.')
+}
+
+function Upalert()
+{
+    alert('You have successfully updated you information.')
+}
+
+function Realert()
+{
+    alert('You have removed you credentials successfully')
+}
+ alert('You need your User ID to remove your Information from the database. And it is Unknown.')
+
+</script>
+
+</body>
+</html>

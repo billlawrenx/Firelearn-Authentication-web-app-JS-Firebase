@@ -1,0 +1,52 @@
+ *{
+     padding: 0;
+     margin: 0;
+ }
+
+ main{
+     width:100vw;
+     height:100vh ;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+form{
+     width: 400px;
+     padding: 5rem;
+     padding-bottom: 10px;
+ }
+
+ button{
+     margin-top: 3rem;
+
+ }
+
+ a{
+     margin-top: 1rem;
+ }
+
+ #loginBtn{
+     width: 125px;
+ }
+
+ #signupBtn{
+    width: 120px;
+}
+
+
+#headnav{
+     color: rgb(1, 184, 168);
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+#headnav:hover{
+     color: black;
+ }
+
+.long{
+    width: 250px;
+}
